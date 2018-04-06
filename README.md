@@ -1,4 +1,4 @@
-# Ping-pong
+# Pig-dice
 #### This is an imitation of a simple dice game, Sunday April 8 2018
 #### By **victor8504**
 ## Description
