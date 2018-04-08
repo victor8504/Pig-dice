@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pig-dice</title>
+  <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <p><b>PIG-DICE</b></p>
+    </div>
+    <div class="rules">
+      <h2><u>RULES OF ENGAGEMENT</u></h2>
+      <p>This is a simple dice game where a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+        <ol>
+          <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+          <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+          <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn</li>
+        </ol>
+        The first player to score 100 or more points wins.</p>
+    </div>
+    <div class="players">
+      <h2><u>ENTER YOUR NAME</u></h2>
+      <div class="row">
+        <form id="players">
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <label for="player-one">Player 1</label>
+              <input type="text" class="form-control" id="player-one" "required">
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+
+              <label for="player-two">Player 2</label>
+              <input type="text" class="form-control" id="player-two" "required">
+
+            </div>
+
+          </div>
+
+          <div id="score">
+
+            <label for="maximum">Maximum Score:</label>
+            <input type="number" min="10" max="100" step="5" placeholder="10" id="maxscore" "required">
+
+          </div>
+
+          <div class="play">
+
+            <button type="submit" id="start" class="btn btn-success">Let's Play!</button>.
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="console">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="p1">
+            <h2>Player 1:<span id="player1"</span></h2>
+            <button id="player1-roll" class="btn btn-danger">Roll Dice</button>
+            <button id="player1-hold" class="btn btn-danger">Hold</button>
+            <h4>Dice Roll:<span id="die-roll-1"></span></h4>
+            <h4>Session Total:<span id="sesssiontotal1" </span></h4>
+            <h4>Final Score:<span id="finalscore1" </span></h4>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="p2">
+          <h2>Player 2:<span id="player2"</span></h2>
+          <button id="player2-roll" class="btn btn-danger">Roll Dice</button>
+          <button id="player2-hold" class="btn btn-danger">Hold</button>
+          <h4>Dice Roll:<span id="die-roll-2"></span></h4>
+          <h4>Session Total:<span id="sesssiontotal2" </span></h4>
+          <h4>Final Score:<span id="finalscore2" </span></h4>
+
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
