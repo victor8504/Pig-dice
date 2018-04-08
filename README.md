@@ -16,6 +16,7 @@ None so far.
 ## Technologies Used
 HTML5, CSS, Bootstrap and JavaScript.
 ## Support and contact details
-contact me at the given email address or contribute to the page.
+Contact me at the given email address or contribute to the page.
+The website can be found using the following address:"https://victor8504.github.io/Pig-dice/"
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
